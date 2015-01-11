@@ -1,0 +1,1175 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tiles",
+				"tilesVertical"
+			],
+			[
+				"tile",
+				"tilePosCache"
+			],
+			[
+				"current",
+				"currentPos"
+			],
+			[
+				"selected",
+				"selectedSurvivor"
+			],
+			[
+				"ti",
+				"tileSize"
+			],
+			[
+				"update",
+				"updateResolution"
+			],
+			[
+				"up",
+				"updateTilesetBatch"
+			],
+			[
+				"ran",
+				"randomGetal"
+			],
+			[
+				"survi",
+				"survivorPos"
+			],
+			[
+				"enemy",
+				"enemyPos"
+			],
+			[
+				"end",
+				"endPos"
+			],
+			[
+				"sur",
+				"survivorPos"
+			],
+			[
+				"L",
+				"levelUp"
+			],
+			[
+				"rope",
+				"ropePercentage"
+			],
+			[
+				"game",
+				"gameSettings"
+			],
+			[
+				"visi",
+				"visibleArea"
+			],
+			[
+				"actor",
+				"actorPos"
+			],
+			[
+				"img",
+				"imgWidth"
+			],
+			[
+				"hot",
+				"hotTileScreenPos"
+			],
+			[
+				"visible",
+				"visibleTiles"
+			],
+			[
+				"scre",
+				"screenHeight"
+			],
+			[
+				"v",
+				"visibleArea"
+			],
+			[
+				"scro",
+				"scrollModifier"
+			],
+			[
+				"screen",
+				"screenWidth"
+			],
+			[
+				"mouse",
+				"mouseSettings"
+			],
+			[
+				"mous",
+				"mouseSettings"
+			],
+			[
+				"draw",
+				"drawOffset"
+			],
+			[
+				"tilePo",
+				"tilePosToScreen"
+			],
+			[
+				"close",
+				"closedList"
+			],
+			[
+				"neigh",
+				"neighborsToConsider"
+			],
+			[
+				"clos",
+				"closedList"
+			],
+			[
+				"As",
+				"AStarNode"
+			],
+			[
+				"tileT",
+				"tileTypes"
+			],
+			[
+				"goal",
+				"goalPos"
+			],
+			[
+				"Ani",
+				"animationRunning"
+			],
+			[
+				"tileset",
+				"tilesetBatch"
+			],
+			[
+				"props",
+				"propsByParent"
+			],
+			[
+				"items",
+				"itemsPerParent"
+			],
+			[
+				"order",
+				"orderChange"
+			],
+			[
+				"acces",
+				"accessToken"
+			],
+			[
+				"support",
+				"supportFormData"
+			],
+			[
+				"process",
+				"processResponsiveMaps"
+			],
+			[
+				"cache",
+				"cacheId"
+			],
+			[
+				"toothed",
+				"toothedBackgroundCache"
+			],
+			[
+				"orname",
+				"ornamentWidth"
+			],
+			[
+				"sympho",
+				"symphonySpecificUrl"
+			],
+			[
+				"ra",
+				"degreesToRadians"
+			],
+			[
+				"inter",
+				"intersectionY"
+			],
+			[
+				"formul",
+				"formulaX"
+			],
+			[
+				"form",
+				"formulaY"
+			],
+			[
+				"tri",
+				"triangles"
+			],
+			[
+				"in",
+				"inPolygon"
+			],
+			[
+				"random",
+				"randomPointInTriangle"
+			],
+			[
+				"triangles",
+				"trianglesWeight"
+			],
+			[
+				"triangle",
+				"trianglesWeight"
+			],
+			[
+				"max",
+				"maxThrust"
+			],
+			[
+				"dis",
+				"distTotal"
+			],
+			[
+				"tot",
+				"totalScore"
+			],
+			[
+				"pa",
+				"parent"
+			],
+			[
+				"move",
+				"moveAngleTowards"
+			],
+			[
+				"to",
+				"toDegrees"
+			],
+			[
+				"target",
+				"targetAngle"
+			],
+			[
+				"add",
+				"addObject"
+			],
+			[
+				"tabna",
+				"tabnavigationConfiguration"
+			],
+			[
+				"comp",
+				"competitionRow"
+			],
+			[
+				"categorie",
+				"categoriesSport"
+			],
+			[
+				"knockout",
+				"knockoutPhases"
+			],
+			[
+				"knockO",
+				"knockoutPhases"
+			],
+			[
+				"playoff",
+				"playoffPhases"
+			],
+			[
+				"qualifi",
+				"qualificationPhases"
+			],
+			[
+				"quali",
+				"qualificationPhases"
+			],
+			[
+				"qual",
+				"qualificationPhases"
+			],
+			[
+				"knocko",
+				"knockoutPhases"
+			],
+			[
+				"rankingTable",
+				"rankingTableAvailable"
+			],
+			[
+				"knock",
+				"knockoutPhases"
+			],
+			[
+				"kno",
+				"knockoutPhases"
+			],
+			[
+				"stem",
+				"stemGeometry"
+			],
+			[
+				"render",
+				"renderAIFinished"
+			],
+			[
+				"glo",
+				"globalAlpha"
+			],
+			[
+				"matches",
+				"matchesPerDay"
+			],
+			[
+				"st",
+				"startPoint"
+			],
+			[
+				"poi",
+				"pointAI"
+			],
+			[
+				"anima",
+				"animateAIHero"
+			],
+			[
+				"mov",
+				"moveAIHeroTo"
+			],
+			[
+				"colour",
+				"colourHero"
+			],
+			[
+				"he",
+				"heroY"
+			],
+			[
+				"colo",
+				"colourHero"
+			],
+			[
+				"imag",
+				"imageColour"
+			],
+			[
+				"hold",
+				"holdchar"
+			],
+			[
+				"se",
+				"setTimeout"
+			],
+			[
+				"get",
+				"getAttribute"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"links",
+				"linksInFirstColumn"
+			],
+			[
+				"border-",
+				"border-radius"
+			],
+			[
+				"fix",
+				"fixFakeRadios"
+			],
+			[
+				"left",
+				"leftBtn"
+			],
+			[
+				"lef",
+				"leftBtn"
+			],
+			[
+				"input",
+				"fileInput"
+			]
+		]
+	},
+	"build_system": "Packages/User/love.sublime-build",
+	"command_palette":
+	{
+		"height": 187.0,
+		"selected_items":
+		[
+			[
+				"sniff",
+				"PHP Code Sniffer: Clear sniffer marks"
+			],
+			[
+				"code snif",
+				"PHP Code Sniffer: Turn Execute On Save Off"
+			],
+			[
+				"lorem",
+				"LoremIpsum: (15) some"
+			],
+			[
+				"lua",
+				"Set Syntax: Lua"
+			],
+			[
+				"build",
+				"Build: Build"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inde",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"mini",
+				"Minipie: Minify"
+			],
+			[
+				"json",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"lor",
+				"LoremIpsum: (5) a bit"
+			],
+			[
+				"prett",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"min",
+				"Minipie: Minify"
+			],
+			[
+				"minip",
+				"Minipie: Minify"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"client",
+				"Clientside Minify Javascript/CSS"
+			],
+			[
+				"css",
+				"Tidy CSS (Low Compression)"
+			],
+			[
+				"minif",
+				"Minify Javascript to file"
+			],
+			[
+				"minifi",
+				"Minify Javascript to file"
+			],
+			[
+				"minfi",
+				"Minify Javascript to file"
+			],
+			[
+				"MINIF",
+				"Minify Javascript"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"xpa",
+				"Xpathvision: Show current Xpath"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"cover",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"remove a",
+				"Package Control: Remove Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 256.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/gus/Documents/Development/Github/Moneyrace/untitled.sublime-project",
+		"/Users/gus/Documents/Development/Github/moonrocks/js/moonrocks.js",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/6BB1F23D-89DA-48FD-AC72-5E46D6745392/home.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/B11988EE-7DE7-4FFB-BCA6-95E8164B20BC/home.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/008B660E-26EC-4BA5-A020-353878EACC0A/nieuws.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/8567E50E-9E67-4E0D-9336-7660F390B6C4/.htaccess",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/43BA953F-DA59-43B8-8B43-69C4F7A952C9/base-template.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/6888BA73-CC1D-48B1-8F05-4C87D0F03407/style.css",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/C351299D-F328-4A03-BDEC-B805986DBBCE/app.js",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/FACDFDA4-CB44-4C4E-BC04-81A6E5E54E47/home.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/A9052717-2EF4-402B-BC6C-5F4265693F6D/about.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/AF5D5A93-7156-421A-B64F-50A42A4A7930/about.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/7CDBA6ED-61E7-4876-908A-4DEE86CDB8AA/uploadfile.field.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/E8BFE9FD-3DDC-4428-944C-5BCCD8895593/dropdown.field.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/B2EF8971-4FCF-4A4C-BAFF-07DDFA2F695B/home.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/DBE00A16-F8A6-435B-B6C5-129D8BEA97EC/home.phtml",
+		"/Users/gus/Documents/Development/Github/LCP/LCP/app/classes/LCP/CharacterConverter.php",
+		"/Users/gus/Documents/Development/Github/LCP/LCP/app/classes/LCP/Item.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/4B39CCF6-5CD2-44B6-A03B-FF7E7649547A/base-template.phtml",
+		"/Users/gus/Documents/Development/Github/Margus/main.lua",
+		"/Users/gus/Library/Application Support/LOVE/Margus/hiscore.txt",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/CA56C81F-4DC0-4BE8-BDD4-C550C7AD49DB/style.css",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/2E580611-E394-405E-81D3-6ADFEA896C92/leden.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/879C92B5-007D-4C77-874D-43D439684937/over-ons.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/34C05134-618E-4F90-ADC7-904C9487384B/over-ons.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/A6F8C046-6EA4-4C15-B6C0-7A72BE2F5866/lid.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/4349B9AE-CFA7-4450-AD30-DE5A1C85F475/contact.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/5F24B335-2ADD-4EA0-9C0F-30DB84E596E4/contact.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/1231C577-9E49-41B9-9B5D-54F0A9F6A61E/nieuws.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/6F646B47-E9CF-4DCD-833D-CF9CFDAEFECF/nieuws.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/86C5216B-D4FB-444C-8B2D-FE01BF74D514/home.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/7137A17A-7033-460D-AFD3-963E6B5E3B30/plaindb.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/B2542FA0-F8B3-4EA1-9687-4F3842DAFCB2/uploadfile.field.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/EFC58284-AEB0-4593-9232-5ED564F37865/uploadfile.extension.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/E3F0642E-6F36-4A58-8E3E-FA419013778C/home.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/33363F6F-8AA0-4B0F-9387-EE9EDF6029DA/home.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/5DCE5AF2-D2EF-489C-ADF8-9547F588D460/lid.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/982A009B-7357-4483-A0AE-2C66E3E6F96D/nieuws.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/1763E269-FEFA-4E5B-9F8F-54404F46EE0E/leden.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/26E0561B-E81A-475A-ACD4-05BFF665E9C6/leden.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/6034387B-610E-42B2-A429-D1A6335EB1C0/home.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/A4F3E1F9-E6B6-4A31-80C3-55BB07CE442D/base-template.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/96B66219-ECF3-400C-94D4-584F5072A248/uploadfile.field.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/7F458473-7DA9-4DDF-979F-ECC323468870/nieuws.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/A924DAD0-0BF3-40CA-9799-857DE56536C3/cms.controller.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/660EEA20-8633-4958-9294-633C294F56D3/string.field.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/6180AEA1-2954-4601-AB1C-BB50DEE089BB/cmsfield.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/8DB089CB-CF37-49CE-A467-3EAB882B9979/cms.extension.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/DBB87635-C86E-44B0-89DE-F1210C5103D8/cmsfield.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/5385CA21-FFCB-4F97-99D0-1ABCAC055AAC/cms.extension.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/915E04EB-D293-437B-982B-B009E4D4E9DE/home.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/2253E6CA-37E9-4E89-8E1C-31913AE0E984/exposities.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/8D5B67CE-BD2F-44F3-B78B-2284AF6B1C6C/leden.controller.class.php",
+		"/Users/gus/Documents/Development/Github/Margus/marsgus/astar.lua",
+		"/Users/gus/Documents/Development/Github/Margus/marsgus/classes.lua",
+		"/Users/gus/Documents/Development/Github/Margus/marsgus/levelmanager.lua",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/EEEEA21A-3BB1-45B1-B40E-225C5AC847B7/app.js",
+		"/Users/gus/Documents/Development/Github/Margus/levels.lua",
+		"/Users/gus/Documents/Development/Github/Spacebase/lib/entity.lua",
+		"/Users/gus/Documents/Development/Github/Spacebase/lib/jobs.lua",
+		"/Users/gus/Documents/Development/Github/Spacebase/lib/AStar.lua",
+		"/Users/gus/Documents/Development/Github/Spacebase/lib/tilemanager.lua",
+		"/Users/gus/Documents/Development/Github/Spacebase/game.lua",
+		"/Users/gus/Documents/Development/Github/Spacebase/lib/game.lua",
+		"/Users/gus/Documents/Development/Github/Spacebase/lib/entitymanager.lua",
+		"/Users/gus/Documents/Development/Github/Spacebase/lib/map.lua",
+		"/Users/gus/Documents/Development/Github/Spacebase/lib/tiles.lua",
+		"/Users/gus/Documents/Development/Github/Spacebase/mousetiles.lua",
+		"/Users/gus/Documents/Development/Github/Spacebase/jobs.lua",
+		"/Users/gus/Documents/Development/Game/marsgus/astar.lua",
+		"/Users/gus/Documents/Development/Github/Detectiveland/main.lua",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/B372CFBD-5241-4ECD-8F47-D7499D8E9346/loginbox.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/1255B86D-4717-43B2-B5C9-9DF335D32698/medewerkers.controllers.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/7357D448-A142-4EB5-B22E-5F534434C086/main.css",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/E25C6500-051C-467B-90FC-0A782AF969F4/base-template.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/8874C619-7591-4A18-B92A-14EA9E1EE922/loginform.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/8F628627-CA38-4C93-BDDA-8165691283CF/bestel.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/75972885-436E-41AD-8783-872B6FD82C2E/bestel.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/C65796C3-32C2-4882-87B5-3BBE63C5C1AE/medewerkers.controllers.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/4BA37404-7FBD-420A-8BCE-C798B1D71912/base-template.phtml",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/FC9F29F1-B826-4342-A50E-BFC03467D627/main.css",
+		"/Users/gus/Documents/Development/Marcel/main.lua",
+		"/Users/gus/Documents/Development/Marcel/marsgus/classes.lua",
+		"/Users/gus/Documents/Development/Marcel/marsgus/astar.lua",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/7B48CBE8-9B92-42D2-8304-978FC44D7D60/app.js",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/3926CB55-F77A-4B9A-8E04-897D7FA5C54F/main.css",
+		"/Users/gus/Documents/Development/Github/Detectiveland/spaceman.png",
+		"/Users/gus/Library/Application Support/Sublime Text 2/Packages/User/love.sublime-build",
+		"/Users/gus/Documents/Development/Github/Detectiveland/config.lua",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/5676E057-D146-496C-B845-6B4835CBC60C/contact.xsl",
+		"/Users/gus/Documents/Development/Bitbucket/determinatie-fe/assets/app/app.js",
+		"/Users/gus/Documents/Development/Github/Aged-Cheddar/game.js",
+		"/Users/gus/Documents/Development/Bitbucket/determinatie-fe/assets/json2/json2.js",
+		"/Users/gus/Documents/Development/Github/Drop/controllers/file.controller.class.php",
+		"/Users/gus/Documents/Development/Github/Drop/assets/site/app.js",
+		"/Users/gus/Documents/Development/Github/Aged-Cheddar/index.html",
+		"/Users/gus/Documents/Development/Github/pushtopl/manifest.webapp",
+		"/Users/gus/Documents/Development/Github/plain-cms/lib/plaindb/plaindb.class.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/extensions/cms-authenticate/cms-authenticate.extension.class.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/extensions/cms/cms.extension.class.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/extensions/cms/cms.controller.class.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/index.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/lib/plain/plain.class.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/templates/base-template.phtml",
+		"/Users/gus/Documents/Development/Github/plain-cms/templates/examples/11.txt",
+		"/Users/gus/Documents/Development/Github/plain-cms/templates/examples/06.txt",
+		"/Users/gus/Documents/Development/Github/plain-cms/templates/examples/05.txt",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/F80C3810-2AD8-4A56-96D5-9F2ABFCAED2B/.htaccess",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/787C08DF-16BC-4232-AB80-74D931361692/.htaccess",
+		"/Users/gus/Documents/Development/Github/plain-cms/lib/mysqlidb/MysqliDb.class.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/extensions/redactor/content/content.fileupload.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/extensions/dropdown/dropdown.field.class.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/extensions/cms-authenticate/phpass/Hash.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/extensions/cms-notifications/cms-notifications.extension.class.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/extensions/cms-modals/cms-modals.extension.class.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/CCE17FE1-EFE7-44AE-A9B6-38D046612A56/convert.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/90ADF207-74E7-4F20-939B-FAA47ADB2D26/convert.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/9F6DC533-8FB3-4099-BC7E-5EFF5ADD90F3/convert.php",
+		"/Users/gus/Library/Caches/Cleanup At Startup/Transmit/5AFDBBC2-D4B0-46F6-9EFA-FDBBF597F79B/convert.php",
+		"/Users/gus/Documents/Development/Github/plain-cms/config.php",
+		"/Users/gus/Documents/Development/Github/sortathing/example.html",
+		"/Users/gus/Documents/Development/Github/sortathing/sortathing.jquery.js",
+		"/Users/gus/Documents/Development/Github/sortathing/sortathing.css",
+		"/Users/gus/Documents/Development/Github/sortathing/README.md",
+		"/Users/gus/Documents/Development/Github/SublimeText-Tabright/README.md",
+		"/Users/gus/Documents/Development/Github/plain-cms/extensions/cms/assets/css/base.css",
+		"/Users/gus/Documents/Development/Github/plain-cms/extensions/cms/assets/sortathing/sortathing.css",
+		"/Users/gus/Documents/Development/Github/plain-cms/extensions/cms/templates/base-template.phtml"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<project>",
+			"/Users/gus/Documents/Development/NOS/www.nos.nl (trunk)/application/default/views",
+			"/Users/gus/Documents/Development/NOS",
+			"/Users/gus/Documents/Development/NOS/app.nos.nl (trunk)/pages/tourscherm-2013",
+			"/Users/gus/Documents/Development/NOS",
+			"/Users/gus/Documents/Development/NOS/www.nos.nl (trunk),/Users/gus/Documents/Development/NOS/content.nos.nl (trunk)",
+			"/Users/gus/Documents/Development/NOS/www.nos.nl (trunk)",
+			"/Users/gus/Documents/Development/NOS/content.nos.nl (trunk),/Users/gus/Documents/Development/NOS/www.nos.nl (trunk)twi",
+			"/Users/gus/Documents/Development/NOS/www.nos.nl (trunk)/application/default",
+			"/Users/gus/Documents/Development/NOS/www.nos.nl (trunk)/application/ek2012",
+			"/Users/gus/Documents/Development/Github/Tripta",
+			"/Users/gus/Documents/Development/Github/Tripta/applications",
+			"/Users/gus/Documents/Development/Github/Tripta/",
+			"/Users/gus/Documents/Development/Github/Tripta/applications/",
+			"/Users/gus/Documents/Development/Github/Tripta/applications/default"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"footer",
+			"log",
+			"print",
+			"water",
+			"onlyWater",
+			"print",
+			"tileheight",
+			"tilemap",
+			"tilewidth",
+			"tileheight",
+			"tilewidth",
+			"tileSize",
+			"tileWidth",
+			"single-line",
+			"enemies",
+			"selectedExpo",
+			"caption",
+			"footer",
+			"body",
+			"header",
+			"gamesettins",
+			"gamesettings",
+			"setcolor",
+			"tilemap",
+			"self",
+			"99",
+			"homepos",
+			"self.homePos = {x=8,y=7}",
+			"rightPos",
+			"leftPos",
+			"left",
+			"leftPos",
+			".x",
+			"Center",
+			"floor",
+			"updatemap",
+			"print",
+			"{x=self.homePos.x-1,y=self.homePos.y}",
+			"0",
+			"print",
+			"wood",
+			"Wood",
+			"wood",
+			"Wood",
+			"worldtime",
+			"gameOver={}",
+			"mouserelased",
+			"tile.",
+			",\n",
+			"self.actor.tilePos.x + self.actor.drawOffset.x",
+			"self.startY",
+			"self.startX",
+			"self.visibleArea.x",
+			".pos",
+			"Pos",
+			"pos",
+			"if self.actor.pos.x",
+			"self.actor.pos.x",
+			"entities",
+			"map",
+			"map:",
+			".b",
+			"instance",
+			"instanc",
+			"tileinstance",
+			"map.",
+			"map:",
+			"map.",
+			"map:",
+			".b",
+			"instan",
+			"map",
+			"map.",
+			"map:",
+			"map.",
+			"isWall",
+			"tilePosToScreen",
+			"possibleGoals",
+			"self.",
+			"map.",
+			"map",
+			"drawOffset",
+			"pos",
+			"cself",
+			"currentPos.y",
+			"urrentPos.x",
+			"goalTile",
+			"position",
+			"floor",
+			"floorPos",
+			"self.floor",
+			"self.pos.y",
+			"self.pos.x",
+			"self",
+			"Marsgus",
+			"stars",
+			"starset",
+			"stars",
+			"tiles",
+			"game:",
+			"Game",
+			"game",
+			"menu",
+			"cover",
+			"input",
+			"navbar",
+			"news",
+			"input",
+			"leftcolor",
+			"x",
+			"survivors[x]",
+			"size",
+			"AStarNode",
+			"#000",
+			"fps",
+			"steps",
+			"local ",
+			"self.",
+			"tileQuads",
+			"love",
+			"middlePoint",
+			"this.height",
+			"this.width",
+			"cop",
+			"clone",
+			"copy",
+			"clone",
+			"github"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\n",
+			"ffilled"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 127.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"nosutils",
+				"content.nos.nl (trunk)/library/Nos/Utils.php"
+			],
+			[
+				"cronlivest",
+				"www.nos.nl (trunk)/application/cron/controllers/LivestreamController.php"
+			],
+			[
+				"nosembedparsertwi",
+				"www.nos.nl (trunk)/library/Nos/Embed/Parser/Twitter.php"
+			],
+			[
+				"crontour",
+				"www.nos.nl (trunk)/application/cron/controllers/Tour2013Controller.php"
+			],
+			[
+				"noscontentlistmedia",
+				"content.nos.nl (trunk)/library/Nos/Content/List/Media.php"
+			],
+			[
+				"nospagesdos",
+				"library/Nos/Pages/Dossier.php"
+			],
+			[
+				"tour2013tablive",
+				"www.nos.nl (trunk)/application/default/layouts/minisites/tour-2013/scripts/dossier/tab/static/live.phtml"
+			],
+			[
+				"",
+				"www.nos.nl (trunk)/application/default/layouts/minisites/tour-2013/scripts/dossier/tab/static/live.phtml"
+			],
+			[
+				"minisitestourlive",
+				"www.nos.nl (trunk)/application/default/layouts/minisites/tour-2013/scripts/dossier/tab/static/live.phtml"
+			],
+			[
+				"nospagesd",
+				"www.nos.nl (trunk)/library/Nos/Pages/Dossier.php"
+			],
+			[
+				"embedparsertw",
+				"www.nos.nl (trunk)/library/Nos/Embed/Parser/Twitter.php"
+			],
+			[
+				"nospagesdossier",
+				"www.nos.nl (trunk)/library/Nos/Pages/Dossier.php"
+			],
+			[
+				"nav.xml",
+				"www.nos.nl (trunk)/config/nav.xml"
+			],
+			[
+				"nosembedparsertw",
+				"www.nos.nl (trunk)/library/Nos/Embed/Parser/Twitter.php"
+			],
+			[
+				"nosembedparser",
+				"www.nos.nl (trunk)/library/Nos/Embed/Parser.php"
+			],
+			[
+				"nosdataliveblog",
+				"content.nos.nl (trunk)/library/Nos/Data/Liveblogitem.php"
+			],
+			[
+				"nosdatalive",
+				"content.nos.nl (trunk)/library/Nos/Data/Liveblog.php"
+			],
+			[
+				"contentlistmedia",
+				"content.nos.nl (trunk)/library/Nos/Content/List/Media.php"
+			],
+			[
+				"nospagesdoss",
+				"www.nos.nl (trunk)/library/Nos/Pages/Dossier.php"
+			],
+			[
+				"cront",
+				"www.nos.nl (trunk)/config/cronjobs.txt"
+			],
+			[
+				"nosserviceinfostra",
+				"content.nos.nl (trunk)/library/Nos/Service/Infostrada/Cycling.php"
+			],
+			[
+				"noscontentbroad",
+				"content.nos.nl (trunk)/library/Nos/Content/Broadcast.php"
+			],
+			[
+				"nospagesdossi",
+				"www.nos.nl (trunk)/library/Nos/Pages/Dossier.php"
+			],
+			[
+				"nosserviceinfostrada",
+				"content.nos.nl (trunk)/library/Nos/Service/Infostrada.php"
+			],
+			[
+				"nosserviceinfostrad",
+				"content.nos.nl (trunk)/library/Nos/Service/Infostrada/Cycling.php"
+			],
+			[
+				"player.onh",
+				"www.nos.nl (trunk)/application/default/views/scripts/snippets/livestream/playerhtml.onhold.phtml"
+			],
+			[
+				"noscontentbr",
+				"content.nos.nl (trunk)/library/Nos/Content/Broadcast.php"
+			],
+			[
+				"nosdatabroad",
+				"content.nos.nl (trunk)/library/Nos/Data/Broadcast.php"
+			],
+			[
+				"nosserviceinfo",
+				"content.nos.nl (trunk)/library/Nos/Service/Infostrada/Cycling.php"
+			],
+			[
+				"nosserviceinf",
+				"content.nos.nl (trunk)/library/Nos/Service/Infostrada.php"
+			],
+			[
+				"nositemdossier",
+				"content.nos.nl (trunk)/library/Nos/Content/Item/Dossier.php"
+			],
+			[
+				"nosdossier",
+				"www.nos.nl (trunk)/library/Nos/Pages/Dossier.php"
+			],
+			[
+				"snippetstabs",
+				"www.nos.nl (trunk)/application/default/layouts/minisites/tour-2013/scripts/dossier/snippets/tabs.phtml"
+			],
+			[
+				"adminliveblog",
+				"www.nos.nl (trunk)/application/admin/controllers/LiveblogController.php"
+			],
+			[
+				"crontour20",
+				"www.nos.nl (trunk)/application/cron/controllers/Tour2013Controller.php"
+			],
+			[
+				"nosserviceinfostr",
+				"content.nos.nl (trunk)/library/Nos/Service/Infostrada.php"
+			],
+			[
+				"tabs",
+				"application/default/layouts/minisites/tour-2013/scripts/dossier/snippets/tabs.phtml"
+			],
+			[
+				"tour2013",
+				"application/cron/controllers/Tour2013Controller.php"
+			],
+			[
+				"snippets/tab",
+				"www.nos.nl (trunk)/application/default/layouts/minisites/tour-2013/scripts/dossier/snippets/tabs.phtml"
+			],
+			[
+				"dossiercontrole",
+				"www.nos.nl (trunk)/application/default/controllers/DossierController.php"
+			],
+			[
+				"block",
+				"www.nos.nl (trunk)/application/op3/views/scripts/snippets/frontpage/block.phtml"
+			],
+			[
+				"frontpage/blo",
+				"www.nos.nl (trunk)/application/op3/views/scripts/snippets/frontpage/block.phtml"
+			],
+			[
+				"cons",
+				"library/Const.php"
+			],
+			[
+				"mini",
+				"/Users/gus/Library/Application Support/Sublime Text 2/Packages/Minipie/Minipie.py"
+			],
+			[
+				"json",
+				"pages/tijdlijn-json-bak/json-data.php"
+			],
+			[
+				"u",
+				"assets/manager/ckeditor/lang/uk.js"
+			],
+			[
+				"un",
+				"assets/default/underscore/underscore.js"
+			],
+			[
+				"mii",
+				"assets/manager/ckeditor/plugins/iframe/dialogs/iframe.js"
+			],
+			[
+				"upload",
+				"applications/default/classes/tripta_uploader.class.php"
+			],
+			[
+				"con",
+				"applications/manager/config.php"
+			],
+			[
+				"tripta",
+				"assets/default/tripta/tripta-facebook.js"
+			],
+			[
+				"upl",
+				"assets/manager/uploadify-addons/uploadify-addons.css"
+			],
+			[
+				"config",
+				"applications/manager/config.php"
+			],
+			[
+				"def",
+				"assets/manager/ckeditor/plugins/templates/templates/default.js"
+			],
+			[
+				"defa",
+				"assets/manager/ckeditor/plugins/styles/styles/default.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
