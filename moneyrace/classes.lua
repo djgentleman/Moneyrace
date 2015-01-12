@@ -47,163 +47,6 @@ MoneyRace.Tilemap = Class {
 	tile = function(self, x, y)
 		return self.map[y][x]
 	end,
-	blocked = function(self, pos)
-
-		if (self:valid(pos)) then
-			if (road1True) then
-				if (goingLeft) then
-					if (self.map[pos.y][pos.x] == 4) then return true end
-					if (self.map[pos.y][pos.x] == 5) then return true end
-					if (self.map[pos.y][pos.x] == 6) then return true end
-					if (self.map[pos.y][pos.x] == 8) then return true end
-					if (self.map[pos.y][pos.x] == 9) then return true end
-					if (self.map[pos.y][pos.x] == 10) then return true end
-					road1True = false
-					goingLeft = false
-					do return false
-
-					end
-				elseif (goingRight) then
-					if (self.map[pos.y][pos.x] == 2) then return true end
-					if (self.map[pos.y][pos.x] == 3) then return true end
-					if (self.map[pos.y][pos.x] == 6) then return true end
-					if (self.map[pos.y][pos.x] == 7) then return true end
-					if (self.map[pos.y][pos.x] == 8) then return true end
-					if (self.map[pos.y][pos.x] == 9) then return true end
-					road1True = false
-					goingRight = false
-					do return false
-					end
-				else
-					road1True = false
-					return true
-				end
-
-			elseif (road2True) then
-				if (goingRight) then
-					if (self.map[pos.y][pos.x] == 3) then return true end
-					if (self.map[pos.y][pos.x] == 6) then return true end
-					if (self.map[pos.y][pos.x] == 7) then return true end
-					if (self.map[pos.y][pos.x] == 8) then return true end
-					if (self.map[pos.y][pos.x] == 9) then return true end
-					road2True = false
-					goingRight = false
-					do return false end
-				elseif (goingUp) then
-					if (self.map[pos.y][pos.x] == 1) then return true end
-					if (self.map[pos.y][pos.x] == 5) then return true end
-					if (self.map[pos.y][pos.x] == 7) then return true end
-					if (self.map[pos.y][pos.x] == 9) then return true end
-					if (self.map[pos.y][pos.x] == 10) then return true end
-					road2True = false
-					goingUp = false
-					do return false end
-				else
-					road2True = false
-					return true
-				end
-
-			elseif (road3True) then
-				if (goingRight) then
-					if (self.map[pos.y][pos.x] == 2) then return true end
-					if (self.map[pos.y][pos.x] == 6) then return true end
-					if (self.map[pos.y][pos.x] == 7) then return true end
-					if (self.map[pos.y][pos.x] == 8) then return true end
-					if (self.map[pos.y][pos.x] == 9) then return true end
-					road3True = false
-					goingRight = false
-					do return false end
-				elseif (goingDown) then
-					if (self.map[pos.y][pos.x] == 1) then return true end
-					if (self.map[pos.y][pos.x] == 4) then return true end
-					if (self.map[pos.y][pos.x] == 7) then return true end
-					if (self.map[pos.y][pos.x] == 8) then return true end
-					if (self.map[pos.y][pos.x] == 10) then return true end
-					road3True = false
-					goingDown = false
-					do return false end
-				else
-					road3True = false
-					return true
-				end
-
-			elseif (road4True) then
-				if (goingLeft) then
-					if (self.map[pos.y][pos.x] == 5) then return true end
-					if (self.map[pos.y][pos.x] == 6) then return true end
-					if (self.map[pos.y][pos.x] == 8) then return true end
-					if (self.map[pos.y][pos.x] == 9) then return true end
-					if (self.map[pos.y][pos.x] == 10) then return true end
-					road4True = false
-					goingLeft = false
-					do return false end
-				elseif (goingDown) then
-					if (self.map[pos.y][pos.x] == 1) then return true end
-					if (self.map[pos.y][pos.x] == 3) then return true end
-					if (self.map[pos.y][pos.x] == 7) then return true end
-					if (self.map[pos.y][pos.x] == 8) then return true end
-					if (self.map[pos.y][pos.x] == 10) then return true end
-					road4True = false
-					goingDown = false
-					do return false end
-				else
-					road4True = false
-					return true
-				end
-
-			elseif (road5True) then
-				if (goingLeft) then
-					if (self.map[pos.y][pos.x] == 4) then return true end
-					if (self.map[pos.y][pos.x] == 6) then return true end
-					if (self.map[pos.y][pos.x] == 8) then return true end
-					if (self.map[pos.y][pos.x] == 9) then return true end
-					if (self.map[pos.y][pos.x] == 10) then return true end
-					road5True = false
-					goingLeft = false
-					do return false end
-				elseif (goingUp) then
-					if (self.map[pos.y][pos.x] == 1) then return true end
-					if (self.map[pos.y][pos.x] == 2) then return true end
-					if (self.map[pos.y][pos.x] == 7) then return true end
-					if (self.map[pos.y][pos.x] == 8) then return true end
-					if (self.map[pos.y][pos.x] == 10) then return true end
-					road5True = false
-					goingUp = false
-					do return false end
-				else
-					road5True = false
-					return true
-				end
-
-			elseif (road6True) then
-				if (goingUp) then
-					if (self.map[pos.y][pos.x] == 1) then return true end
-					if (self.map[pos.y][pos.x] == 2) then return true end
-					if (self.map[pos.y][pos.x] == 5) then return true end
-					if (self.map[pos.y][pos.x] == 7) then return true end
-					if (self.map[pos.y][pos.x] == 9) then return true end
-					if (self.map[pos.y][pos.x] == 10) then return true end
-					road6True = false
-					goingUp = false
-					do return false end
-				elseif (goingDown) then
-					if (self.map[pos.y][pos.x] == 1) then return true end
-					if (self.map[pos.y][pos.x] == 3) then return true end
-					if (self.map[pos.y][pos.x] == 4) then return true end
-					if (self.map[pos.y][pos.x] == 7) then return true end
-					if (self.map[pos.y][pos.x] == 8) then return true end
-					if (self.map[pos.y][pos.x] == 10) then return true end
-					road6True = false
-					goingDown = false
-					do return false end
-				else
-					road6True = false
-					return true
-				end
-			end
-		end
-		return true
-	end,
 	valid = function(self, pos)
 		if (pos.y > 0 and pos.y <= #self.map) then
 			if (pos.x > 0 and pos.x <= #self.map[1]) then
@@ -211,7 +54,176 @@ MoneyRace.Tilemap = Class {
 			end
 		end
 		do return false end
+	end,
+	blocked = function(self, pos)
+
+		if (self:valid(pos)) then
+			if (road1True) then
+				--print("road1True")
+				if (goingLeft) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 4) then return true end
+					if (self.map[pos.y][pos.x] == 5) then return true end
+					if (self.map[pos.y][pos.x] == 6) then return true end
+					if (self.map[pos.y][pos.x] == 8) then return true end
+					if (self.map[pos.y][pos.x] == 9) then return true end
+					if (self.map[pos.y][pos.x] == 10) then return true end
+					do return false end
+					road1True = false
+					goingLeft = false
+				elseif (goingRight) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 2) then return true end
+					if (self.map[pos.y][pos.x] == 3) then return true end
+					if (self.map[pos.y][pos.x] == 6) then return true end
+					if (self.map[pos.y][pos.x] == 7) then return true end
+					if (self.map[pos.y][pos.x] == 8) then return true end
+					if (self.map[pos.y][pos.x] == 9) then return true end
+					do return false end
+					road1True = false
+					goingRight = false
+				end
+					road1True = false
+					return true
+				
+
+			elseif (road2True) then
+				if (goingRight) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 3) then return true end
+					if (self.map[pos.y][pos.x] == 6) then return true end
+					if (self.map[pos.y][pos.x] == 7) then return true end
+					if (self.map[pos.y][pos.x] == 8) then return true end
+					if (self.map[pos.y][pos.x] == 9) then return true end
+					do return false end
+					road2True = false
+					goingRight = false
+				elseif (goingUp) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 1) then return true end
+					if (self.map[pos.y][pos.x] == 5) then return true end
+					if (self.map[pos.y][pos.x] == 7) then return true end
+					if (self.map[pos.y][pos.x] == 9) then return true end
+					if (self.map[pos.y][pos.x] == 10) then return true end
+					do return false end
+					road2True = false
+					goingUp = false
+				end
+					road2True = false
+					return true
+				
+
+			elseif (road3True) then
+				if (goingRight) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 2) then return true end
+					if (self.map[pos.y][pos.x] == 6) then return true end
+					if (self.map[pos.y][pos.x] == 7) then return true end
+					if (self.map[pos.y][pos.x] == 8) then return true end
+					if (self.map[pos.y][pos.x] == 9) then return true end
+					do return false end
+					road3True = false
+					goingRight = false
+				elseif (goingDown) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 1) then return true end
+					if (self.map[pos.y][pos.x] == 4) then return true end
+					if (self.map[pos.y][pos.x] == 7) then return true end
+					if (self.map[pos.y][pos.x] == 8) then return true end
+					if (self.map[pos.y][pos.x] == 10) then return true end
+					do return false end
+					road3True = false
+					goingDown = false
+				end
+					road3True = false
+					return true
+				
+
+			elseif (road4True) then
+				if (goingLeft) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 5) then return true end
+					if (self.map[pos.y][pos.x] == 6) then return true end
+					if (self.map[pos.y][pos.x] == 8) then return true end
+					if (self.map[pos.y][pos.x] == 9) then return true end
+					if (self.map[pos.y][pos.x] == 10) then return true end
+					do return false end
+					road4True = false
+					goingLeft = false
+				elseif (goingDown) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 1) then return true end
+					if (self.map[pos.y][pos.x] == 3) then return true end
+					if (self.map[pos.y][pos.x] == 7) then return true end
+					if (self.map[pos.y][pos.x] == 8) then return true end
+					if (self.map[pos.y][pos.x] == 10) then return true end
+					do return false end
+					road4True = false
+					goingDown = false
+				end
+					road4True = false
+					return true
+			
+
+			elseif (road5True) then
+				if (goingLeft) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 4) then return true end
+					if (self.map[pos.y][pos.x] == 6) then return true end
+					if (self.map[pos.y][pos.x] == 8) then return true end
+					if (self.map[pos.y][pos.x] == 9) then return true end
+					if (self.map[pos.y][pos.x] == 10) then return true end
+					do return false end
+					road5True = false
+					goingLeft = false
+				elseif (goingUp) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 1) then return true end
+					if (self.map[pos.y][pos.x] == 2) then return true end
+					if (self.map[pos.y][pos.x] == 5) then return true end
+					if (self.map[pos.y][pos.x] == 7) then return true end
+					if (self.map[pos.y][pos.x] == 9) then return true end
+					if (self.map[pos.y][pos.x] == 10) then return true end
+					do return false end
+					road5True = false
+					goingUp = false
+				end
+					road5True = false
+					return true
+				
+
+			elseif (road6True) then
+				if (goingUp) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 1) then return true end
+					if (self.map[pos.y][pos.x] == 2) then return true end
+					if (self.map[pos.y][pos.x] == 5) then return true end
+					if (self.map[pos.y][pos.x] == 7) then return true end
+					if (self.map[pos.y][pos.x] == 9) then return true end
+					if (self.map[pos.y][pos.x] == 10) then return true end
+					do return false end
+					road6True = false
+					goingUp = false
+				elseif (goingDown) then
+					if (self.map[pos.y][pos.x] == 0) then return true end
+					if (self.map[pos.y][pos.x] == 1) then return true end
+					if (self.map[pos.y][pos.x] == 3) then return true end
+					if (self.map[pos.y][pos.x] == 4) then return true end
+					if (self.map[pos.y][pos.x] == 7) then return true end
+					if (self.map[pos.y][pos.x] == 8) then return true end
+					if (self.map[pos.y][pos.x] == 10) then return true end
+					do return false end
+					road6True = false
+					goingDown = false
+				end
+					road6True = false
+					return true
+				
+			end
+		end
+		return true
 	end
+	
 }
 
 MoneyRace.Animation = Class {
@@ -265,48 +277,39 @@ MoneyRace.Animation = Class {
 		self.cyclesSinceLastUpdate = 0
 		self.animationRunning = false
 	end,
-	intersect = function(self, x, y)
-		if (
-			x>=self.pos.x and x<=self.pos.x+(self.frameWidth * gameSettings.zoom) and
-			y>=self.pos.y and y<=self.pos.y+(self.frameHeight * gameSettings.zoom)
-			) then
-			return true
-		end
-	end,
 	center = function(self)
 		return {x=self.pos.x+((self.frameWidth * gameSettings.zoom) / 2), y=self.pos.y+((self.frameHeight * gameSettings.zoom) / 2)}
 	end
 }
 
 MoneyRace.Entity = Class {
-	init = function(self, image, pos, steps)
+	init = function(self, image, tilePos, steps)
+		self.tilePos = tilePos
+		self.pixelOffset = {x=0, y=0}
 		self.sprite = MoneyRace.Animation(
 			image,
-			{x=(pos.x-1)*gameSettings.tileSize*gameSettings.zoom, y=(pos.y-1)*gameSettings.tileSize*gameSettings.zoom},
+			self:pixelPos(),
 			steps
 		)
 		self.job = nil
-		self.dead = false
-		self.tilePosCache = self:tilePos()
 	end,
-	tilePos = function(self)
-		local tile_x = math.floor(self.sprite.pos.x * 1000 / (gameSettings.tileSize * gameSettings.zoom * 1000)) + 1
-		local tile_y = math.floor(self.sprite.pos.y * 1000 / (gameSettings.tileSize * gameSettings.zoom * 1000)) + 1
-		--print("tilepos", tile_x, tile_y)
-		return {x = tile_x, y=tile_y}
-	end,
-	recalculateSpritePosition = function(self)
-		self.sprite.pos = {
-			x=(self.tilePosCache.x-1)*(gameSettings.tileSize*gameSettings.zoom),
-			y=(self.tilePosCache.y-1)*(gameSettings.tileSize*gameSettings.zoom)
+	pixelPos = function(self)
+		return {
+			x = ((self.tilePos.x - 1) * gameSettings.tileSize * gameSettings.zoom) + self.pixelOffset.x,
+			y = ((self.tilePos.y - 1) * gameSettings.tileSize * gameSettings.zoom) + self.pixelOffset.y
 		}
 	end,
+	recalculateSpritePosition = function(self)
+	return {
+		x = ((self.tilePos.x - 1) * gameSettings.tileSize * gameSettings.zoom) + self.pixelOffset.x,
+		y = ((self.tilePos.y - 1) * gameSettings.tileSize * gameSettings.zoom) + self.pixelOffset.y
+	}
+	end,
  	draw = function(self)
-	 	if (self.dead) then return false end
+		self.sprite.pos = self:pixelPos()
 		self.sprite:draw()
 	end,
 	update = function(self, dt)
-		if (self.dead) then return false end
 		self.sprite:update(dt)
 		if (self.job) then
 			local jobResult = self.job:update(dt)
@@ -325,9 +328,7 @@ MoneyRace.Survivor = Class {
 		self.normalImage = love.graphics.newImage("tileset/spaceman.png")
 		--self.hiliteImage = love.graphics.newImage("tileset/spaceman-hilite.png")
 		self.raceTime = raceTime
-		MoneyRace.Entity.init(self, self.normalImage, pos, 4, raceTime)
-
-
+		MoneyRace.Entity.init(self, self.normalImage, pos, 4)
 		self.speed = 250
 	end,
 	setUnselect = function(self)
@@ -338,14 +339,15 @@ MoneyRace.Survivor = Class {
 		self.selected = true
 		--self.sprite:setFrames(self.hiliteImage, 4)
 	end,
-	arrive = function(self, x, y)
+	arrive = function(self, pos)
 		--self.tilePosCache = self:tilePos()
 		--aankomen op de basis (bezorgen)
-		local tile = tilemap:tile(x,y)
-		if (tile == 7 or tile == 8 or tile == 9 or tile == 10) then
+		--MoneyRace.Entity.update(self, dt)
+	local tileType = tilemap:tile(pos.x,pos.y)
+		if (tileType == 7 or tileType == 8 or tileType == 9 or tileType == 10) then
 			levelManager:levelFinished()
 		end
-		return false
+	return false
 	end,
 	giveJob = function(self, name, options)
 		-- load a dynamic class based on "name" variable
@@ -382,51 +384,74 @@ MoneyRace.WalkPath = Class {
 	__includes = MoneyRace.Job,
 	init = function(self, actor, options)
 		MoneyRace.Job.init(self, actor, options)
-		local currentPos = self.actor.sprite.pos
+		--local currentPos = self.actor.sprite.pos
 		--if (#self.options.path > 1) then table.remove(self.options.path, 1) end
 
-		local goalTile = self.options.path[1]
-		if (currentPos.x == goalTile.pos.x and currentPos.y == goalTile.pos.y) then table.remove(self.options.path, 1) end
+		--local goalTile = self.options.path[1]
+		--if (currentPos.x == goalTile.pos.x and currentPos.y == goalTile.pos.y) then table.remove(self.options.path, 1) end
 
 		self.speed = 150
 		if (self.options.speed) then self.speed = self.options.speed end
 		self.actor.sprite:start()
 	end,
 	process = function(self, dt)
-		local currentPos = self.actor.sprite.pos
-		local goalTile = self.options.path[1]
+		local currentTilePos = self.actor.tilePos
+		local currentPixelOffset = self.actor.pixelOffset
+		local goalTilePos = self.options.path[1].pos
 
-		local goalPos = {
-			x=(goalTile.pos.x-1)*gameSettings.tileSize*gameSettings.zoom,
-			y=(goalTile.pos.y-1)*gameSettings.tileSize*gameSettings.zoom
-		}
-
-		if currentPos.x==goalPos.x and currentPos.y==goalPos.y then
-			table.remove(self.options.path,1)
-			self.actor.tilePosCache = self.actor:tilePos()
-			if (#self.options.path == 0) then
-				self.actor.sprite:stop()
-				return self.actor:arrive(goalTile.pos.x,goalTile.pos.y)
-			end
+		if currentTilePos.x == goalTilePos.x and currentTilePos.y == goalTilePos.y then
+			if (currentPixelOffset.x == 0 and currentPixelOffset.y == 0) then
+				table.remove(self.options.path,1)
+				if (#self.options.path == 0) then
+					self.actor.sprite:stop()
+					return self.actor:arrive(goalTilePos)
+				end
 			return true
+			end
 		end
 
 		local movement = self.speed * dt
+		local maxPixelOffset 	= gameSettings.tileSize * gameSettings.zoom
+		local minPixelOffset 	= -1 * maxPixelOffset
 
-		if currentPos.x > goalPos.x then
-			currentPos.x = math.max(currentPos.x-movement, goalPos.x)
+		-- naar links
+		if currentTilePos.x > goalTilePos.x then
+			currentPixelOffset.x = currentPixelOffset.x-movement
 		end
-		if currentPos.x < goalPos.x then
-			currentPos.x = math.min(currentPos.x+movement, goalPos.x)
+		-- naar rechts
+		if currentTilePos.x < goalTilePos.x then
+			currentPixelOffset.x = currentPixelOffset.x+movement
 		end
-		if currentPos.y > goalPos.y then
-			currentPos.y = math.max(currentPos.y-movement, goalPos.y)
+		-- omhoog
+		if currentTilePos.y > goalTilePos.y then
+			currentPixelOffset.y = currentPixelOffset.y-movement
 		end
-		if currentPos.y < goalPos.y then
-			currentPos.y = math.min(currentPos.y+movement, goalPos.y)
+		-- omlaag
+		if currentTilePos.y < goalTilePos.y then
+			currentPixelOffset.y = currentPixelOffset.y+movement
 		end
 
-		self.actor.sprite.pos = currentPos
+		currentPixelOffset.x = math.max(minPixelOffset, math.min(maxPixelOffset, currentPixelOffset.x))
+		currentPixelOffset.y = math.max(minPixelOffset, math.min(maxPixelOffset, currentPixelOffset.y))
+
+		if (currentPixelOffset.x >= maxPixelOffset) then
+			self.actor.tilePos.x = self.actor.tilePos.x + 1
+			currentPixelOffset.x = 0
+		end
+		if (currentPixelOffset.x <= minPixelOffset) then
+			self.actor.tilePos.x = self.actor.tilePos.x - 1
+			currentPixelOffset.x = 0
+		end
+		if (currentPixelOffset.y >= maxPixelOffset) then
+			self.actor.tilePos.y = self.actor.tilePos.y + 1
+			currentPixelOffset.y = 0
+		end
+		if (currentPixelOffset.y <= minPixelOffset) then
+			self.actor.tilePos.y = self.actor.tilePos.y - 1
+			currentPixelOffset.y = 0
+		end
+
+		self.actor.pixelOffset = currentPixelOffset
 		return true
 	end
 }

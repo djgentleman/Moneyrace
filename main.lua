@@ -71,9 +71,9 @@ function updateResolution()
 
 	local desiredTileSize = 0
 	if (width > height) then
-		desiredTileSize = math.floor(height / gameSettings.tilesVertical)
+		desiredTileSize = 32 -- math.floor(height / gameSettings.tilesVertical)
 	else
-		desiredTileSize = math.floor(width / gameSettings.tilesHorizontal)
+		desiredTileSize = 32 --math.floor(width / gameSettings.tilesHorizontal)
 	end
 
 	gameSettings.zoom=math.max(1, math.floor(desiredTileSize / gameSettings.tileSize * 10) / 10)
@@ -81,8 +81,8 @@ function updateResolution()
 	gameSettings.resolution.width = math.ceil(gameSettings.tilesHorizontal * gameSettings.tileSize * gameSettings.zoom)
 	gameSettings.resolution.height = math.ceil(gameSettings.tilesVertical * gameSettings.tileSize * gameSettings.zoom)
 
-	gameSettings.offset.x = (width - gameSettings.resolution.width) / 2
-	gameSettings.offset.y = (height - gameSettings.resolution.height) / 2
+	gameSettings.offset.x = math.floor(width - gameSettings.resolution.width) / 2
+	gameSettings.offset.y = math.floor(height - gameSettings.resolution.height) / 2
 
 	if (gameSettings.resolution.width < 640) then
 		mainFont = love.graphics.newFont("font/Sniglet-ExtraBold.otf", 15);
@@ -103,7 +103,6 @@ end
 
 function game:update(dt)
 
-
 	local selectedSurvivor = nil
 	for x=1, #survivors do
 		survivors[x]:update(dt)
@@ -123,33 +122,34 @@ function game:update(dt)
 		local deltaX = player.dragStart.x - mouseX
 		local deltaY = player.dragStart.y - mouseY
 
-		if (math.abs(deltaX) > 10 or math.abs(deltaY) > 10) then
-			local posCache = {x=selectedSurvivor.tilePosCache.x, y=selectedSurvivor.tilePosCache.y}
+		if (math.abs(deltaX) > 50 or math.abs(deltaY) > 50) then
+			local posCache = selectedSurvivor.tilePos
 			local tile_selected_x = posCache.x
 			local tile_selected_y = posCache.y
 
 			if (math.abs(deltaX) > math.abs(deltaY)) then
 				if (deltaX > 0) then
-					--print("going left")
+					print("going left")
 					goingLeft = true
 					tile_selected_x = tile_selected_x - 1
 				else
-					--print("going right")
+					print("going right")
 					goingRight = true
 					tile_selected_x = tile_selected_x + 1
 				end
 			elseif (math.abs(deltaY) > math.abs(deltaX)) then
 				if (deltaY > 0) then
-					--print("going up")
+					print("going up")
 					goingUp = true
 					tile_selected_y = tile_selected_y - 1
 				else
-					--print("going down")
+					print("going down")
 					goingDown = true
 					tile_selected_y = tile_selected_y + 1
 				end
 			end
-			local tile = tilemap:tile(selectedSurvivor.tilePosCache.x,selectedSurvivor.tilePosCache.y)
+			local tile = tilemap:tile(selectedSurvivor.tilePos.x,selectedSurvivor.tilePos.y)
+			
 			if (tile == 1) then
 				road1True = true
 			elseif (tile == 2) then
@@ -164,19 +164,27 @@ function game:update(dt)
 				road6True = true
 			end
 			tile_type = tilemap:tile(tile_selected_x,tile_selected_y)
+		--	print("type ",tile_type, " road ", road1True)
 			if (tilemap:blocked({x=tile_selected_x,y=tile_selected_y})) then return false end
 
 			path = AStar:findFromEntity(selectedSurvivor, {x=tile_selected_x, y=tile_selected_y})
 
 			if (selectedSurvivor:giveJobIfReady("WalkPath", {path=path})) then
 				--print("go to ", tile_selected_x, tile_selected_y)
-				player.dragStart = {x=mouseX, y=mouseY}
 			end
+
+			player.dragStart = nil
+			road1True = false
+			road2True = false
+			road3True = false
+			road4True = false
+			road5True = false
+			road6True = false
 		end
 	end
-
 	--player.time = math.floor((love.timer.getTime() - levelStartTime))
 	--self.raceTime= self.raceTime - 10
+	return true
 end
 
 function game:keypressed(key)

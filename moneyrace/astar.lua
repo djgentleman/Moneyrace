@@ -55,7 +55,7 @@ AStar.node = Class {
 }
 
 function AStar:findFromEntity(entity, endPos)
-	local currentTile = entity:tilePos()
+	local currentTile = entity.tilePos
 	local currentPixelPos = entity.sprite.pos
 	if (currentPixelPos.x ~= currentTile.x * (gameSettings.tileSize * gameSettings.zoom) ) then
 		-- x beweegt
