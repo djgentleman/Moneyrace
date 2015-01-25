@@ -69,8 +69,7 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 9) then return true end
 					if (self.map[pos.y][pos.x] == 10) then return true end
 					do return false end
-					road1True = false
-					goingLeft = false
+				
 				elseif (goingRight) then
 					if (self.map[pos.y][pos.x] == 0) then return true end
 					if (self.map[pos.y][pos.x] == 2) then return true end
@@ -80,10 +79,9 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 8) then return true end
 					if (self.map[pos.y][pos.x] == 9) then return true end
 					do return false end
-					road1True = false
-					goingRight = false
+				
 				end
-					road1True = false
+				
 					return true
 				
 
@@ -96,8 +94,7 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 8) then return true end
 					if (self.map[pos.y][pos.x] == 9) then return true end
 					do return false end
-					road2True = false
-					goingRight = false
+				
 				elseif (goingUp) then
 					if (self.map[pos.y][pos.x] == 0) then return true end
 					if (self.map[pos.y][pos.x] == 1) then return true end
@@ -106,10 +103,9 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 9) then return true end
 					if (self.map[pos.y][pos.x] == 10) then return true end
 					do return false end
-					road2True = false
-					goingUp = false
+				
 				end
-					road2True = false
+			
 					return true
 				
 
@@ -122,8 +118,7 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 8) then return true end
 					if (self.map[pos.y][pos.x] == 9) then return true end
 					do return false end
-					road3True = false
-					goingRight = false
+				
 				elseif (goingDown) then
 					if (self.map[pos.y][pos.x] == 0) then return true end
 					if (self.map[pos.y][pos.x] == 1) then return true end
@@ -132,10 +127,9 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 8) then return true end
 					if (self.map[pos.y][pos.x] == 10) then return true end
 					do return false end
-					road3True = false
-					goingDown = false
+			
 				end
-					road3True = false
+				
 					return true
 				
 
@@ -148,8 +142,7 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 9) then return true end
 					if (self.map[pos.y][pos.x] == 10) then return true end
 					do return false end
-					road4True = false
-					goingLeft = false
+				
 				elseif (goingDown) then
 					if (self.map[pos.y][pos.x] == 0) then return true end
 					if (self.map[pos.y][pos.x] == 1) then return true end
@@ -158,10 +151,9 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 8) then return true end
 					if (self.map[pos.y][pos.x] == 10) then return true end
 					do return false end
-					road4True = false
-					goingDown = false
+				
 				end
-					road4True = false
+				
 					return true
 			
 
@@ -174,8 +166,7 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 9) then return true end
 					if (self.map[pos.y][pos.x] == 10) then return true end
 					do return false end
-					road5True = false
-					goingLeft = false
+				
 				elseif (goingUp) then
 					if (self.map[pos.y][pos.x] == 0) then return true end
 					if (self.map[pos.y][pos.x] == 1) then return true end
@@ -185,10 +176,9 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 9) then return true end
 					if (self.map[pos.y][pos.x] == 10) then return true end
 					do return false end
-					road5True = false
-					goingUp = false
+				
 				end
-					road5True = false
+				
 					return true
 				
 
@@ -202,8 +192,7 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 9) then return true end
 					if (self.map[pos.y][pos.x] == 10) then return true end
 					do return false end
-					road6True = false
-					goingUp = false
+				
 				elseif (goingDown) then
 					if (self.map[pos.y][pos.x] == 0) then return true end
 					if (self.map[pos.y][pos.x] == 1) then return true end
@@ -213,10 +202,9 @@ MoneyRace.Tilemap = Class {
 					if (self.map[pos.y][pos.x] == 8) then return true end
 					if (self.map[pos.y][pos.x] == 10) then return true end
 					do return false end
-					road6True = false
-					goingDown = false
+				
 				end
-					road6True = false
+				
 					return true
 				
 			end

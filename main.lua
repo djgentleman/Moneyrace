@@ -22,6 +22,11 @@ road3True = false
 road4True = false
 road5True = false
 road6True = false
+touchReleased = false
+touchPressX = 0
+touchPressY = 0
+deltaX = 0
+deltaY = 0
 
 player = {
 	totalScore=0,
@@ -112,15 +117,13 @@ function game:update(dt)
 	selectedSurvivor = survivors[x]
 	end
 
-	local mouseX, mouseY = love.mouse.getPosition()
-	if (not player.dragStart) then
-		player.dragStart = {x=mouseX, y=mouseY}
-	end
+	--local mouseX, mouseY = love.mouse.getPosition()
+	--if (not player.dragStart) then
+	--		player.dragStart = {x=mouseX, y=mouseY}
+	--end
 
-	if (selectedSurvivor and player.dragStart) then
+	if (selectedSurvivor and touchReleased) then
 
-		local deltaX = player.dragStart.x - mouseX
-		local deltaY = player.dragStart.y - mouseY
 
 		if (math.abs(deltaX) > 50 or math.abs(deltaY) > 50) then
 			local posCache = selectedSurvivor.tilePos
@@ -129,21 +132,21 @@ function game:update(dt)
 
 			if (math.abs(deltaX) > math.abs(deltaY)) then
 				if (deltaX > 0) then
-					print("going left")
+				--	print("going left")
 					goingLeft = true
 					tile_selected_x = tile_selected_x - 1
 				else
-					print("going right")
+				--	print("going right")
 					goingRight = true
 					tile_selected_x = tile_selected_x + 1
 				end
 			elseif (math.abs(deltaY) > math.abs(deltaX)) then
 				if (deltaY > 0) then
-					print("going up")
+				--	print("going up")
 					goingUp = true
 					tile_selected_y = tile_selected_y - 1
 				else
-					print("going down")
+				--	print("going down")
 					goingDown = true
 					tile_selected_y = tile_selected_y + 1
 				end
@@ -163,9 +166,9 @@ function game:update(dt)
 			elseif (tile == 6) then
 				road6True = true
 			end
-			tile_type = tilemap:tile(tile_selected_x,tile_selected_y)
+			--tile_type = tilemap:tile(tile_selected_x,tile_selected_y)
 		--	print("type ",tile_type, " road ", road1True)
-			if (tilemap:blocked({x=tile_selected_x,y=tile_selected_y})) then return false end
+			--if (tilemap:blocked({x=tile_selected_x,y=tile_selected_y})) then return false end
 
 			path = AStar:findFromEntity(selectedSurvivor, {x=tile_selected_x, y=tile_selected_y})
 
@@ -173,18 +176,36 @@ function game:update(dt)
 				--print("go to ", tile_selected_x, tile_selected_y)
 			end
 
-			player.dragStart = nil
+			--player.dragStart = nil
+			touchReleased = false
 			road1True = false
 			road2True = false
 			road3True = false
 			road4True = false
 			road5True = false
 			road6True = false
+			goingRight = false
+			goingLeft = false
+			goingUp = false
+			goingDown = false
 		end
 	end
 	--player.time = math.floor((love.timer.getTime() - levelStartTime))
 	--self.raceTime= self.raceTime - 10
 	return true
+end
+
+function game:mousepressed(x, y)
+	touchPressX = x*love.graphics.getWidth()
+	touchPressY = y*love.graphics.getHeight()
+end
+
+function game:mousereleased(x, y)
+	
+	deltaX = touchPressX - (x*love.graphics.getWidth())
+	deltaY = touchPressY - (y*love.graphics.getHeight())
+	touchReleased = true
+	
 end
 
 function game:keypressed(key)
