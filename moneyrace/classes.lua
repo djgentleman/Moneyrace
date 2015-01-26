@@ -47,14 +47,7 @@ MoneyRace.Tilemap = Class {
 	tile = function(self, x, y)
 		return self.map[y][x]
 	end,
-	valid = function(self, pos)
-		if (pos.y > 0 and pos.y <= #self.map) then
-			if (pos.x > 0 and pos.x <= #self.map[1]) then
-				return true
-			end
-		end
-		do return false end
-	end,
+	
 	blocked = function(self, pos)
 
 		if (self:valid(pos)) then
@@ -210,6 +203,14 @@ MoneyRace.Tilemap = Class {
 			end
 		end
 		return true
+	end,
+	valid = function(self, pos)
+		if (pos.y > 0 and pos.y <= #self.map) then
+			if (pos.x > 0 and pos.x <= #self.map[1]) then
+				return true
+			end
+		end
+		do return false end
 	end
 	
 }
@@ -283,8 +284,8 @@ MoneyRace.Entity = Class {
 	end,
 	pixelPos = function(self)
 		return {
-			x = ((self.tilePos.x - 1) * gameSettings.tileSize * gameSettings.zoom) + self.pixelOffset.x,
-			y = ((self.tilePos.y - 1) * gameSettings.tileSize * gameSettings.zoom) + self.pixelOffset.y
+			x =  ((self.tilePos.x - 1) * gameSettings.tileSize * gameSettings.zoom) + self.pixelOffset.x,
+			y =  ((self.tilePos.y - 1) * gameSettings.tileSize * gameSettings.zoom) + self.pixelOffset.y
 		}
 	end,
 	recalculateSpritePosition = function(self)

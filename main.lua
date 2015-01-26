@@ -40,9 +40,10 @@ gameSettings = {
 	resolution={width=0,height=0},
 	offset={x=0,y=0},
 	tilesHorizontal=20,
-	tilesVertical=16,
+	tilesVertical=30,
 	tileSize=16,
-	zoom=2
+	zoom=2,
+	zoomBackground=2
 }
 
 --levelStartTime = 0
@@ -54,6 +55,7 @@ function love.load()
 	updateResolution()
 
 	levelManager = LevelManager()
+	backgroundImage = love.graphics.newImage("tileset/level1Background.png")
 	Gamestate.registerEvents()
 	Gamestate.switch(game)
 
@@ -74,14 +76,23 @@ end
 function updateResolution()
 	width, height = love.window.getDimensions()
 
-	local desiredTileSize = 0
-	if (width > height) then
-		desiredTileSize = 32 -- math.floor(height / gameSettings.tilesVertical)
-	else
-		desiredTileSize = 32 --math.floor(width / gameSettings.tilesHorizontal)
+	width = math.min(width,height)
+	gameSettings.zoomBackground = 2.0
+	gameSettings.zoom = 1.5
+	if (width >= 640) then
+	gameSettings.zoomBackground = 2.0
+	gameSettings.zoom = 2.5
 	end
+	if (width >= 960) then
+	gameSettings.zoomBackground = 2.0
+	gameSettings.zoom = 2
+	end
+if (width>=1280) then
+	gameSettings.zoomBackground = 2.0
+gameSettings.zoom = 5
+end
 
-	gameSettings.zoom=math.max(1, math.floor(desiredTileSize / gameSettings.tileSize * 10) / 10)
+	--gameSettings.zoom=math.max(1, math.floor(desiredTileSize / gameSettings.tileSize * 10) / 10)
 
 	gameSettings.resolution.width = math.ceil(gameSettings.tilesHorizontal * gameSettings.tileSize * gameSettings.zoom)
 	gameSettings.resolution.height = math.ceil(gameSettings.tilesVertical * gameSettings.tileSize * gameSettings.zoom)
@@ -89,7 +100,10 @@ function updateResolution()
 	gameSettings.offset.x = math.floor(width - gameSettings.resolution.width) / 2
 	gameSettings.offset.y = math.floor(height - gameSettings.resolution.height) / 2
 
-	if (gameSettings.resolution.width < 640) then
+	if (gameSettings.resolution.width <= 480) then
+		mainFont = love.graphics.newFont("font/Sniglet-ExtraBold.otf", 10);
+		storyFont = love.graphics.newFont("font/Sniglet-ExtraBold.otf", 20);
+	elseif (gameSettings.resolution.width > 480 and gameSettings.resolution.width <= 640) then
 		mainFont = love.graphics.newFont("font/Sniglet-ExtraBold.otf", 15);
 		storyFont = love.graphics.newFont("font/Sniglet-ExtraBold.otf", 40);
 	else
@@ -107,7 +121,7 @@ function game:enter()
 end
 
 function game:update(dt)
-
+	
 	local selectedSurvivor = nil
 	for x=1, #survivors do
 		survivors[x]:update(dt)
@@ -217,6 +231,11 @@ end
 
 function game:draw()
 	-- draw map
+	
+	love.graphics.draw(backgroundImage, 0, 
+		0,
+		0,
+		 gameSettings.zoomBackground, gameSettings.zoomBackground)
 	tilemap:draw()
 
 	-- draw survivors
