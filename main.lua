@@ -39,7 +39,7 @@ gameSettings = {
 	--resolution={width=640,height=512},
 	resolution={width=0,height=0},
 	offset={x=0,y=0},
-	tilesHorizontal=20,
+	tilesHorizontal=22,
 	tilesVertical=30,
 	tileSize=16,
 	zoom=2,
@@ -55,7 +55,7 @@ function love.load()
 	updateResolution()
 
 	levelManager = LevelManager()
-	backgroundImage = love.graphics.newImage("tileset/level1Background.png")
+	
 	Gamestate.registerEvents()
 	Gamestate.switch(game)
 
@@ -76,18 +76,18 @@ end
 function updateResolution()
 	width, height = love.window.getDimensions()
 
-	width = math.min(width,height)
-	gameSettings.zoomBackground = 2.0
+	size = math.min(width,height)
+	gameSettings.zoomBackground = 1.5
 	gameSettings.zoom = 1.5
-	if (width >= 640) then
+	if (size >= 640) then
 	gameSettings.zoomBackground = 2.0
 	gameSettings.zoom = 2.5
 	end
-	if (width >= 960) then
+	if (size >= 960) then
 	gameSettings.zoomBackground = 2.0
 	gameSettings.zoom = 2
 	end
-if (width>=1280) then
+if (size>=1280) then
 	gameSettings.zoomBackground = 2.0
 gameSettings.zoom = 5
 end
@@ -118,6 +118,7 @@ function game:enter()
 	--levelStartTime = love.timer.getTime()
 	levelManager:loadLevel()
 
+
 end
 
 function game:update(dt)
@@ -146,21 +147,21 @@ function game:update(dt)
 
 			if (math.abs(deltaX) > math.abs(deltaY)) then
 				if (deltaX > 0) then
-				--	print("going left")
+					print("going left")
 					goingLeft = true
 					tile_selected_x = tile_selected_x - 1
 				else
-				--	print("going right")
+					print("going right")
 					goingRight = true
 					tile_selected_x = tile_selected_x + 1
 				end
 			elseif (math.abs(deltaY) > math.abs(deltaX)) then
 				if (deltaY > 0) then
-				--	print("going up")
+					print("going up")
 					goingUp = true
 					tile_selected_y = tile_selected_y - 1
 				else
-				--	print("going down")
+					print("going down")
 					goingDown = true
 					tile_selected_y = tile_selected_y + 1
 				end
@@ -182,8 +183,8 @@ function game:update(dt)
 			end
 			--tile_type = tilemap:tile(tile_selected_x,tile_selected_y)
 		--	print("type ",tile_type, " road ", road1True)
-			--if (tilemap:blocked({x=tile_selected_x,y=tile_selected_y})) then return false end
-
+			if (tilemap:blocked({x=tile_selected_x,y=tile_selected_y})) then return false end
+			
 			path = AStar:findFromEntity(selectedSurvivor, {x=tile_selected_x, y=tile_selected_y})
 
 			if (selectedSurvivor:giveJobIfReady("WalkPath", {path=path})) then
@@ -232,8 +233,8 @@ end
 function game:draw()
 	-- draw map
 	
-	love.graphics.draw(backgroundImage, 0, 
-		0,
+	love.graphics.draw(levelManager.backgroundImage, gameSettings.offset.x, 
+		gameSettings.offset.y,
 		0,
 		 gameSettings.zoomBackground, gameSettings.zoomBackground)
 	tilemap:draw()

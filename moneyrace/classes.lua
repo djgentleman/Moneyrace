@@ -52,7 +52,7 @@ MoneyRace.Tilemap = Class {
 
 		if (self:valid(pos)) then
 			if (road1True) then
-				--print("road1True")
+				print("road1True")
 				if (goingLeft) then
 					if (self.map[pos.y][pos.x] == 0) then return true end
 					if (self.map[pos.y][pos.x] == 4) then return true end
@@ -151,6 +151,7 @@ MoneyRace.Tilemap = Class {
 			
 
 			elseif (road5True) then
+				print("road5True")
 				if (goingLeft) then
 					if (self.map[pos.y][pos.x] == 0) then return true end
 					if (self.map[pos.y][pos.x] == 4) then return true end
@@ -384,6 +385,10 @@ MoneyRace.WalkPath = Class {
 		self.actor.sprite:start()
 	end,
 	process = function(self, dt)
+		if (#self.options.path == 0) then 
+			self.actor.sprite:stop()
+			return false
+		end
 		local currentTilePos = self.actor.tilePos
 		local currentPixelOffset = self.actor.pixelOffset
 		local goalTilePos = self.options.path[1].pos

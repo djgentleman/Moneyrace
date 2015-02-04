@@ -57,42 +57,11 @@ AStar.node = Class {
 function AStar:findFromEntity(entity, endPos)
 	local currentTile = entity.tilePos
 	local currentPixelPos = entity.sprite.pos
-	if (currentPixelPos.x ~= currentTile.x * (gameSettings.tileSize * gameSettings.zoom) ) then
+
+	--if (currentPixelPos.x ~= currentTile.x * (gameSettings.tileSize * gameSettings.zoom) ) then
 		-- x beweegt
-		local leftPos = {x=currentTile.x-1, y=currentTile.y}
-		local rightPos = {x=currentTile.x+1, y=currentTile.y}
-		if (
-			not tilemap:blocked(leftPos) and
-			math.sqrt(math.pow(leftPos.x - endPos.x, 2) + math.pow(leftPos.y - endPos.y, 2)) < math.sqrt(math.pow(currentTile.x - endPos.x, 2) + math.pow(currentTile.y - endPos.y, 2))
-		) then
-			return AStar:find(leftPos, endPos)
-		end
-		if (
-			not tilemap:blocked(rightPos) and
-			math.sqrt(math.pow(rightPos.x - endPos.x, 2) + math.pow(rightPos.y - endPos.y, 2)) < math.sqrt(math.pow(currentTile.x - endPos.x, 2) + math.pow(currentTile.y - endPos.y, 2))
-		) then
-			return AStar:find(rightPos, endPos)
-		end
-		return AStar:find(currentTile, endPos)
-	elseif (currentPixelPos.y ~= currentTile.y * (gameSettings.tileSize * gameSettings.zoom) ) then
-		-- y beweegt
-		local topPos = {x=currentTile.x, y=currentTile.y-1}
-		local bottomPos = {x=currentTile.x, y=currentTile.y+1}
-		if (
-			not tilemap:blocked(topPos) and
-			math.sqrt(math.pow(topPos.x - endPos.x, 2) + math.pow(topPos.y - endPos.y, 2)) < math.sqrt(math.pow(currentTile.x - endPos.x, 2) + math.pow(currentTile.y - endPos.y, 2))
-		) then
-			return AStar:find(topPos, endPos)
-		end
-		if (
-			not tilemap:blocked(bottomPos) and
-			math.sqrt(math.pow(bottomPos.x - endPos.x, 2) + math.pow(bottomPos.y - endPos.y, 2)) < math.sqrt(math.pow(currentTile.x - endPos.x, 2) + math.pow(currentTile.y - endPos.y, 2))
-		) then
-			return AStar:find(bottomPos, endPos)
-		end
-		return AStar:find(currentTile, endPos)
-	end
 	return AStar:find(currentTile, endPos)
+
 end
 
 function AStar:find(startPos, endPos, options)
@@ -160,7 +129,7 @@ function AStar:find(startPos, endPos, options)
 		end
 	end
 
-	if (node.pos.x ~= endPos.x and node.pos.y ~= endPos.y) then
+	if (node.pos.x ~= endPos.x or node.pos.y ~= endPos.y) then
 		return {AStar.node(startPos)}
 	end
 
